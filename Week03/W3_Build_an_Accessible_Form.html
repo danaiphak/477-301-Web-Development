@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <nav>
+        <a href="Sign-up.html">Sign-up | </a>
+        <a href="Login.html">Login | </a>
+        <a href="Contact.html">Contact </a>
+    </nav><br>
+    <main>
+        <form action="signup.php" method="post">
+            <label for="fullname">Fullname</label><br>
+            <input 
+                type="text"
+                id="fullname"
+            name="fullname"
+                required
+                pattern="[A-Za-z]{3,}"
+                title="Please enter at least 3 English letters"
+            ><br><br>
+            <label for="email">Email</label><br>
+            <input 
+                type="email"
+                id="email"
+                name="email"
+                required
+            ><br><br>
+            <label for="age">Age</label><br>
+            <input 
+                type="number"
+                id="age"
+                name="age"
+                required
+                min="18"
+                max="100"
+            ><br><br>
+            <label for="birthday">Birthday</label><br>
+            <input 
+                type="date"
+                id="birthday"
+                name="birthday"
+                required
+            ><br><br>
+            <label for="phone">Phone</label><br>
+            <input 
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                pattern="0[0-9]{9}"
+                title="Please enter a 10-digit phone number starting with 0"
+            ><br><br>
+            <fieldset>
+                <legend>Gender</legend>
+                <input 
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Male"
+                    required>
+                <label for="male">Male</label>
+                <input 
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Female">
+                <label for="female">Female</label>
+                <input 
+                    type="radio"
+                    id="other"
+                    name="gender"
+                    value="Other">
+                <label for="other">Other</label>
+            </fieldset><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    
+<footer>
+    <p>&copy; 2026 Registration Form.</p>
+</footer>
+</body>
+</html>
