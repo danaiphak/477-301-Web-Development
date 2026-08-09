@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: black;
+    line-height: 1.6;
+}
+header {
+    background-color: #DCDCDC;
+    color: black;
+    text-align: center;
+    padding: 45px 20px;
+}
+h1 {
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+.subtitle {
+    font-size: 18px;
+    color: black;
+}
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+#profile {
+    background-color: #DCDCDC;
+}
+.card {
+    background-color: #DCDCDC;
+    padding: 25px;
+    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.card:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+h2 {
+    color: black;
+    font-size: 28px;
+    margin-top: 0;
+}
+h3 {
+    color: black;
+    font-size: 23px;
+}
+p {
+    font-size: 17px;
+}
+li {
+    margin-bottom: 8px;
+}
+table {
+    width: 100%;
+    margin-top: 15px;
+}
+th,
+td {
+    padding: 12px;
+    border: 1px solid black;
+    text-align: left;
+}
+th {
+    background-color: #BEBEBE;
+    color: black;
+}
+.image-section {
+    text-align: center;
+}
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+footer {
+    background-color: #DCDCDC;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
