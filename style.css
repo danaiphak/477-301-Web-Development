@@ -1,0 +1,84 @@
+/* ============================================================
+   Custom CSS: Overriding Bootstrap Defaults & Custom Stying
+   ============================================================ */
+
+:root {
+  --cafe-primary: #6f4e37;      /* Coffee Brown */
+  --cafe-secondary: #c49b63;    /* Warm Gold / Caramel */
+  --cafe-dark: #2b1e16;         /* Dark Roast */
+  --cafe-bg-light: #fbf9f5;     /* Warm Cream */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cafe-bg-light);
+  color: #333;
+}
+
+/* 1. Custom Carousel Height & Overlay */
+.carousel-img {
+  height: 480px;
+  object-fit: cover;
+  filter: brightness(0.85); /* ให้ภาพสว่างพอดี อ่านข้อความง่ายขึ้น */
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 280px; /* ย่อความสูงลงเมื่อแสดงผลบนจอมือถือ */
+  }
+}
+
+.bg-dark-translucent {
+  background-color: rgba(43, 30, 22, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+/* 2. Override: Navbar Styling */
+.navbar-custom {
+  background-color: var(--cafe-dark) !important;
+  border-bottom: 2px solid var(--cafe-secondary);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #f8f9fa !important;
+  transition: color 0.2s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--cafe-secondary) !important;
+}
+
+/* 3. Override: Bootstrap Primary Button (.btn-primary) */
+.btn-primary {
+  background-color: var(--cafe-primary) !important;
+  border-color: var(--cafe-primary) !important;
+  border-radius: 8px !important;
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--cafe-dark) !important;
+  border-color: var(--cafe-dark) !important;
+  transform: translateY(-1px);
+}
+
+/* 4. Override: Card Default Styling */
+.custom-card {
+  border: 1px solid rgba(196, 155, 99, 0.25) !important;
+  border-radius: 12px !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card-menu-img {
+  height: 220px;
+  object-fit: cover;
+}
